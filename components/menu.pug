@@ -1,0 +1,25 @@
+nav.navbar.navbar-expand-lg.navbar-light.position-absolute.w-100.mt-3(style="background: transparent;")
+    a.navbar-brand.pl-4(href="#")
+        img(src="./images/logo.svg" width="120px" height="40px")
+    button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation")
+        span(style="color: white;")
+            i(class="fas fa-bars")
+    .collapse.navbar-collapse.justify-content-end.mr-5#navbarNavDropdown.menu
+        ul.navbar-nav.font-weight-bold.menu__list
+            li.nav-item.px-3
+                a.nav-link(href="#home") HOME
+            li.nav-item.px-3
+                a.nav-link(href="#intro") INTRO
+            li.nav-item.px-3
+                a.nav-link(href="#service") SERVICES
+            li.nav-item.px-3
+                a.nav-link(href="#project") PROJECTS
+            li.nav-item.px-3
+                a.nav-link(href="#about") ABOUT
+            li.nav-item.dropdown.px-3
+                a.nav-link.dropdown-toggle(href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") CONTACT
+                .dropdown-menu(aria-labelledby="navbarDropdownMenuLink" style="min-width: 1rem; left: 3.5rem")
+                    a.dropdown-item(href="#contact")
+                        i(class="fab fa-facebook-f")
+                    a.dropdown-item(href="#contact")
+                        i(class="fab fa-twitter")

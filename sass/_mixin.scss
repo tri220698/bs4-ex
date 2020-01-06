@@ -1,0 +1,15 @@
+@mixin btn_green($width,$bg,$color) {
+    display: block;
+    width: #{$width};
+    background-color: #{$bg};   
+    border : 2px solid #{$bg};
+    margin: auto;
+    padding: 1rem 0;
+    border-radius: 0.3rem;
+    margin-top: 1.3rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #{$color};
+    font-weight: bold;
+    transition: 0.3s;
+}

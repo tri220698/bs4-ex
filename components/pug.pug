@@ -1,0 +1,8 @@
+- var projects = [{image: './images/project-1.jpg', text : 'Online Banking'},{image: './images/project-2.jpg', text : 'Classic Industry'},{image: './images/project-3.jpg', text : 'BoomBap Audio'},{image: './images/project-4.jpg', text : 'Van Moose'},{image: './images/project-5.jpg', text : 'Joy Moments'},{image: './images/project-6.jpg', text : 'Spark Events'},{image: './images/project-7.jpg', text : 'Casual Wear'},{image: './images/project-8.jpg', text : 'Zazoo Apps'}]
+
+mixin listProject(projects)
+    each project in projects
+        .col-6.col-md-3.project-item
+            img.project-item__img(src= project.image, alt="")
+            div.project-item__div
+            span.project-item__span= project.text
