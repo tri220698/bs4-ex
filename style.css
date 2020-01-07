@@ -537,6 +537,52 @@ nav .menu__list li:hover a.nav-link {
   color: #1dc995;
 }
 
+.hide-menu {
+  width: 4.6rem;
+  height: auto;
+  position: fixed;
+  bottom: 1.2rem;
+  right: 1.2rem;
+  z-index: 999;
+  text-align: center;
+}
+.hide-menu label {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.4rem;
+  margin: 0 auto;
+  padding: 0.7rem 0.7rem;
+  background-color: #1dc995;
+  color: white;
+  border-radius: 50%;
+}
+.hide-menu #menu-toggle {
+  display: none;
+}
+.hide-menu ul#hide-menu__menu {
+  list-style-type: none;
+  font-size: 0.8rem;
+  height: 0;
+  overflow: hidden;
+  transition: 0.4s;
+  font-weight: bolder;
+}
+.hide-menu ul#hide-menu__menu li {
+  padding: 0.4rem 0;
+}
+.hide-menu ul#hide-menu__menu li a {
+  text-decoration: none;
+  color: #9e9999;
+  transition: 0.4s;
+}
+.hide-menu ul#hide-menu__menu li:hover a {
+  transition: 0.4s;
+  color: black;
+}
+.hide-menu #menu-toggle:checked + ul#hide-menu__menu {
+  height: 13rem;
+}
+
 @media all and (min-width: 1024px) and (max-width: 1200px) {
   #about .about-right__counter .about-right__counter-item .about-right__counter-number {
     font-size: 2rem;

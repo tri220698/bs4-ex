@@ -19,3 +19,19 @@ html(lang="en")
     include components/projects.pug
     include components/about.pug
     include components/contact.pug
+    .hide-menu
+      label(for="menu-toggle" class="fas fa-bars")
+      input#menu-toggle(type="checkbox")
+      ul#hide-menu__menu
+        li
+            a(href="#home") HOME
+        li
+            a(href="#intro") INTRO
+        li
+            a(href="#service") SERVICES
+        li
+            a(href="#project") PROJECTS
+        li
+            a(href="#about") ABOUT
+        li
+            a(href="#contact") CONTACT

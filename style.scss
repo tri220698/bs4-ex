@@ -603,4 +603,59 @@ nav {
     }
 }
 
+.hide-menu {
+    width: 4.6rem;
+    height: auto;
+    position: fixed;
+    bottom: 1.2rem;
+    right: 1.2rem;
+    z-index: 999;
+    text-align: center;
+
+    label {
+        cursor: pointer;
+        display: inline-block;
+        font-size: 1.4rem;
+        margin: 0 auto;
+        padding: 0.7rem 0.7rem;
+        background-color: $color-green;
+        color: white;
+        border-radius: 50%;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    ul#hide-menu__menu {
+        list-style-type: none;
+        font-size: 0.8rem;
+        height: 0;
+        overflow: hidden;
+        transition: 0.4s;
+        font-weight: bolder;
+
+        li {
+            padding: 0.4rem 0;
+
+            a {
+                text-decoration: none;
+                color: rgb(158, 153, 153);
+                transition: 0.4s;
+            }
+        }
+
+        li:hover {
+            a {
+                transition: 0.4s;
+                color: black;
+            }
+        }
+    }    
+
+    #menu-toggle:checked + ul#hide-menu__menu {
+        height: 13rem;
+    }
+}
+
 @import 'sass/media';
